@@ -1,9 +1,9 @@
 package com.juaracoding.psikotes.utils;
 
 import java.io.File;
-import java.util.logging.Logger;
 
 
+import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
 
@@ -43,5 +43,6 @@ private static Logger logger = Logger.getLogger(Log.class.getName());
 	public static void debug(String message) {
 		logger.debug(message);
 	}
+	
 	
 }

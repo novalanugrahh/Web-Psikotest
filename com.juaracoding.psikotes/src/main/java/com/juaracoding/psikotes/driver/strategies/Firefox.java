@@ -1,4 +1,4 @@
-package com.juaracoding.psikotes.driver;
+package com.juaracoding.psikotes.driver.strategies;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;

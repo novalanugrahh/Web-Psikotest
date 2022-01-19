@@ -2,4 +2,5 @@ browser=Chrome
 myusername=testsqajurcod@gmail.com
 password=123456
 displayname=Psikotes
-email=ariedwisountika@gmail.com
+txtemail=dev@gmail.com	
+txtname=tes dev

@@ -1,4 +1,4 @@
-package com.juaracoding.psikotes.test;
+package com.juaracoding.psikotes;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

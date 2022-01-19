@@ -1,12 +1,16 @@
-package com.juaracoding.psikotes.driver;
+package com.juaracoding.psikotes.driver.strategies;
+
+import com.juaracoding.psikotes.utils.Constants;
 
 public class DriverStrategyImplementator {
 	public static DriverStrategy chooseStrategy(String strategy) {
 		switch(strategy) {
-		case "chrome":
+		case Constants.CHROME:
 			return new Chrome();
-		case "firefox":
+			
+		case Constants.FIREFOX:
 			return new Firefox();
+			
 		default:
 			return null;
 		
