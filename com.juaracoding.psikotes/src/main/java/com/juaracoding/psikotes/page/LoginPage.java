@@ -37,7 +37,17 @@ public class LoginPage {
 	
 	public void goToLoggedIn(String username, String password) {		
 		txtUsername.sendKeys(username);
+		try {
+			Thread.sleep(4000);	
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
 		txtPassword.sendKeys(password);
+		try {
+			Thread.sleep(4000);	
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
 		btnLogin.click();
 	}
 	

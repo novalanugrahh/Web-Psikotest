@@ -96,23 +96,34 @@ public class StepDefinition {
 		dashboardPage.goToCheckBox();
 		extentTest.log(LogStatus.PASS, "User click button checkbox");
 	}
+
 	@When("^User click button cancel")
 	public void user_click_button_cancel()  {
 		dashboardPage.goToCancel();
 		extentTest.log(LogStatus.PASS, "User click button checkbox");
 	
 	}
-	@When("^User click row perpage")
+	@Then("^User click button next")
+	public void user_click_button_next()  {
+		dashboardPage.goToNext();
+		extentTest.log(LogStatus.PASS, "User click button next");
+	}
+	@When("^User click button previous")
+	public void user_click_button_previous()  {
+		dashboardPage.goToPrevious();
+		extentTest.log(LogStatus.PASS, "User click button previous");
+	}
+	@Then("^User click row perpage")
 	public void User_click_row_perpage()  {
 		dashboardPage.goToRowPerpage();
 		extentTest.log(LogStatus.PASS, "User click row perpage");
 	}
-	@Then("^User click page 5")
+	@When("^User click page 5")
 	public void User_click_page_5()  {
 		dashboardPage.goToPage5();
 		extentTest.log(LogStatus.PASS, "User click page 5");
 	}
-	@When("^User click row per page")
+	@Then("^User click row per page")
 	public void User_click_row_per_page()  {
 		dashboardPage.goToPerpage();
 		extentTest.log(LogStatus.PASS, "User click row per page");
@@ -179,20 +190,24 @@ public class StepDefinition {
 		dashboardPage.goToClose();
 		extentTest.log(LogStatus.PASS, "User click close");
 	}
-	
-	@When("^User click button refresh")
+	@When("^User click button delete")
+	public void user_click_button_delete()  {
+		dashboardPage.goToDelete();
+		extentTest.log(LogStatus.PASS, "User click button delete");
+	}
+	@Then("^User click button refresh")
 	public void User_click_button_refresh()  {
 		dashboardPage.goToRefresh();
 		extentTest.log(LogStatus.PASS, "User click button refresh");	
 	
 		}
 	
-	@Then("^User click button profile")
+	@When("^User click button profile")
 	public void User_click_button_profile()  {
 		dashboardPage.goToProfile();
 		extentTest.log(LogStatus.PASS, "User click button profile");
 		}
-	@When("^User click button logout")
+	@Then("^User click button logout")
 	public void User_click_button_logout()  {
 		dashboardPage.goToLogout();
 		extentTest.log(LogStatus.PASS, "User click button logout");

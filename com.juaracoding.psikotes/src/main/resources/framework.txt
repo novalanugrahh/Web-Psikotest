@@ -2,5 +2,5 @@ browser=Chrome
 myusername=testsqajurcod@gmail.com
 password=123456
 displayname=Psikotes
-txtemail=dev@gmail.com	
-txtname=tes dev
+txtemail=Test12@gmail.com	
+txtname=Test 1

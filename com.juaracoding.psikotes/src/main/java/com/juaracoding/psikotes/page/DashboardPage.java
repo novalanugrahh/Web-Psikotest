@@ -25,6 +25,9 @@ private WebDriver driver;
 	@FindBy(css = "#main-content > div > div.RaList-main-64 > div > table > thead > tr > th.MuiTableCell-root.MuiTableCell-head.RaDatagrid-headerCell-94.MuiTableCell-paddingCheckbox.MuiTableCell-sizeSmall > span > span")
 	private WebElement btnCheckBox;
 	
+	@FindBy(xpath = "//*[@id=\"main-content\"]/div/div[2]/div/span/div/div[3]/button[2]")
+	private WebElement btnNext;
+	
 	@FindBy(css = "#main-content > div > div.RaList-main-64 > div > div > div.RaBulkActionsToolbar-title-87 > button > span")
 	private WebElement btnCancel;
 	
@@ -58,6 +61,9 @@ private WebDriver driver;
 	@FindBy(css = "#main-content > div > div.RaList-main-64 > div > table > tbody > tr > td:nth-child(9) > a > span > svg")
 	private WebElement btnEdit;
 	
+	@FindBy(css = "#main-content > div > div.RaList-main-64 > div > span > div > div.RaPaginationActions-actions-114 > button.MuiButtonBase-root.MuiButton-root.MuiButton-text.previous-page.MuiButton-textPrimary.MuiButton-textSizeSmall.MuiButton-sizeSmall")
+	private WebElement btnPrev;
+	
 	@FindBy(css = "#status > label > span.MuiSwitch-root > span.MuiButtonBase-root.MuiIconButton-root.PrivateSwitchBase-root-105.MuiSwitch-switchBase.MuiSwitch-colorPrimary")
 	private WebElement btnActivasi;
 	
@@ -66,6 +72,9 @@ private WebDriver driver;
 	
 	@FindBy(css = "#main-content > div > div.RaList-main-64 > div > table > tbody > tr > td:nth-child(8) > a > span > svg")
 	private WebElement btnShow;
+	
+	@FindBy(css = "#main-content > div > div.RaList-main-64 > div > table > tbody > tr > td:nth-child(10) > button > span > svg")
+	private WebElement btnDelete;
 	
 	@FindBy(css = "#menu-appbar > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded > ul > li")
 	private WebElement btnLogout;
@@ -118,6 +127,22 @@ private WebDriver driver;
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0,500)");
 		
+	}
+	public void goToNext() {
+		try {
+			Thread.sleep(4000);	
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		btnNext.click();
+	}
+	public void goToPrevious() {
+		try {
+			Thread.sleep(5000);	
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		btnPrev.click();
 	}
 	public void goToRowPerpage() {
 		try {
@@ -186,13 +211,20 @@ private WebDriver driver;
 	}
 	public void goToProfile() {
 		try {
-			Thread.sleep(3000);	
+			Thread.sleep(5000);	
 			} catch (Exception e) {
 				// TODO: handle exception
 			}
 		btnProfile.click();
 	}
-	
+	public void goToDelete() {
+		try {
+			Thread.sleep(5000);	
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		btnDelete.click();
+	}
 	public void goToAddFilter() {
 		try {
 			Thread.sleep(4000);	
